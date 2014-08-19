@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Figure &amp; Figure Caption</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="../css/master-project.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' />
+  </head>
+
+  <body style="padding: 40px;">
+<!--
+
+    Figure <figure> & Figcaption <figcaption> Elements
+
+    (for additional information about the <img> element, see img.html)
+
+
+    The <figure> element is self-contained content, with optional caption,
+    that is related to, but not reliant on, the main flow of a document.
+
+    A <figure> and it's contents should make sense if moved throughout a
+    document, or if removed from a document entirely.
+
+    ___
+
+    <figcaption> is an optional element that represents a caption
+    or legend associated with a figure (image, illustration, diagram
+    or code snippet).
+
+    It must be a direct child of the <figure> element, but it can be
+    placed first or last inside the element.
+
+
+    Example: First
+
+    <figure>
+      <img />
+      <figcaption></figcaption>
+    </figure>
+
+
+    Example: Last
+
+    <figure>
+      <figcaption></figcaption>
+      <img />
+    </figure>
+
+-->
+
+
+
+<!--
+
+  Example 1: Solo figure
+
+-->
+
+<figure>
+  <img src="https://d26nzsixr14s87.cloudfront.net/series/132x176/2042.jpg" alt="The Cat In The Hat poster artwork" />
+</figure>
+
+
+<!--
+
+  Example 2: Figure With Caption
+
+  Note: when using both alternative text and a figure caption, the figure caption
+  should take on the bulk of the image description, and the alternative text can
+  be reduced to minimal information. Never duplicate the alternative text to be used
+  as the figure caption, as screen readers will then present a user with duplicate
+  information.
+
+-->
+
+<figure>
+    <img src="https://d26nzsixr14s87.cloudfront.net/series/132x176/2042.jpg" alt="Show poster artwork" />
+    <figcaption>
+      Fig. 1: The Cat in the Hat poster artwork
+    </figcaption>
+</figure>
+
+</body>
+</html>

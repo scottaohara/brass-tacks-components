@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Anchor Element</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="../css/master-project.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' />
+  </head>
+
+  <body style="padding: 40px;">
+<!--
+
+    Usage of the Anchor <a> Element
+
+
+    The anchor (hyperlink, link) element should only be used to
+    link between document pages or within entire screen changes
+    of a single page application.
+
+
+    For accessibility reasons, we should never use a different
+    element to mimic the functionality of an anchor element.
+
+
+    By default, anchor elements that have href attributes are
+    tabindexable. Only in Firefox on Mac OSX does an accessibility
+    flag need to be turned on in the system settings for a user to
+    tabindex to an anchor element.
+
+
+    With that said, unless a placeholder anchor element needs to be
+    implemented (a placeholder anchor element does not have an href
+    attribute), there is no reason to add a tabindex attribute.
+
+
+    We should be careful in styling anchor elements to resemble buttons.
+    Links and buttons are accessed differently via keyboard commands and
+    user agents. To minimize the potential UX issues of these, it is
+    advised to not mix their purposes if at all possible.
+
+-->
+
+
+
+<!--
+
+    Example 1:
+
+    Default anchor element
+
+    A standard element with a defined href
+
+-->
+
+<a href="#!">Default Anchor Element</a>
+
+<br />
+<br />
+
+
+<!--
+
+    Example 2:
+
+    Default anchor element w/title
+
+    A standard element with a defined href and title attribute.
+
+    Keep in mind that title attributes are not accessible to screen readers
+
+-->
+
+<a href="#!" title="Defined title attribute">Default Anchor Element w/title attribute</a>
+
+
+<br />
+<br />
+
+
+<!--
+
+    Example 3:
+
+    Placeholder anchor element
+
+    This would be used in the case that we semantically need to use
+    an anchor element, but because we are using JavaScript, we do not
+    require or necessarily want an href to be declared (not recommended).
+
+-->
+
+<a>Placeholder</a>
+
+<br />
+<br />
+
+<a tabindex="0" role="link">Placeholder with tabindex="0" and aria role</a>
+
+<br />
+<br />
+
+
+<!--
+
+    Example 4:
+
+    Anchor Elements Styled to look like Buttons
+
+    When styling a link this way, we should be careful to make sure there
+    are measures taken to mitigate accessibility issues that come from
+    this treatment.
+
+    e.g. links are activated using the ENTER key, where buttons are activated
+    using the space bar. This creates an obvious disconnect between what a
+    user may be seeing / partially seeing or having dictated to them and the
+    actual behavior that must be performed to interact with the element.
+
+-->
+
+<a>Anchor Element Styled as a Button</a>
+
+<br />
+<br />
+
+<a href="#!!" role="button" class="btn">A link that looks like a button</a>
+
+
+</body>
+</html>

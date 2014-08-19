@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Buttons</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="../css/master-project.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' />
+  </head>
+
+  <body style="padding: 40px;">
+
+<!--
+
+    Buttons: General
+
+
+    The styling and markup of these elements is currently
+    subject to change. Use these as merely a reference
+    of where the app may be going at this point...
+
+    Also contained are the current styling of the CTA
+    button for marketing pages. This only exists in two
+    sizes as of building this demo.
+
+-->
+
+
+
+
+<!--
+
+    Example 1:
+
+    Standard mark-up for using buttons, input buttons
+    and links styled to look like buttons
+-->
+
+
+
+<button class="btn">Button</button> <input type="button" class="btn" value="Button Label" />
+<button class="btn" disabled="disabled">Disabled Button</button>
+
+<br />
+<br />
+
+<a href="#!" class="btn" role="button">Link styled as a button</a>
+<a href="#!" class="btn" role="button" disabled="disabled">Disabled Link</a>
+
+<br />
+<br />
+
+<!-- We likely will only use the 'submit' and maybe 'reset' versions here >-->
+<input type="button" class="btn" value="Button Label" />
+<input type="submit" class="btn" value="Submit" />
+<input type="reset" class="btn" value="Reset" />
+
+<br />
+<br />
+
+
+<!--
+
+  Example 2:
+
+  Marketing CTA Button
+
+-->
+
+<a href="#!" class="btn--cta" role="button">
+  This is a Link
+</a>
+
+<button type="button" class="btn--cta">
+  This is a Button
+</button>
+
+<input type="submit" value="This is a Submit Input" class="btn--cta" />
+
+<br />
+<br />
+
+<a href="#!" class="btn--cta cta-alt" role="button">
+  This is a Link
+</a>
+
+<button type="button" class="btn--cta cta-alt">
+  This is a Button
+</button>
+
+<input type="submit" value="This is a Submit Input" class="btn--cta cta-alt" />
+
+<br />
+<br />
+
+<button type="button" class="btn--cta cta-thin">
+  This is a Button (thin)
+</button>
+
+<button type="button" class="btn--cta cta-fat">
+  This is a Button (fat)
+</button>
+
+
+<br />
+<br />
+
+
+<!--
+
+  Example 3:
+
+  Sizing Variations
+
+-->
+
+<a href="#!" class="btn btn--tiny">Tiny</a>
+<a href="#!" class="btn btn--small">Small</a>
+<a href="#!" class="btn">Normal</a>
+<a href="#!" class="btn btn--large">Large</a>
+
+
+<div class="w-70">
+  <button class="btn btn--small btn--wide">Small wide within a 70% wide parent</button>
+</div>
+<a href="#!" class="btn btn--wide">Normal wide</a>
+
+
+<!--
+
+  Example 4:
+
+  Corner Style Variations
+
+-->
+
+<a href="#!" class="btn">Normal</a>
+<button class="btn btn--round">Rounded</button>
+<a href="#!" class="btn btn--square">Square</a>
+
+
+<!--
+
+  Example 5:
+
+  Buttons contained within a pill
+
+-->
+
+<div class="pill-container">
+  <a href="#!" class="btn btn--small btn--prime">Left</a>
+  <a href="#!" class="btn btn--small">Center</a>
+  <button class="btn btn--small">Right</button>
+</div>
+
+
+<!--
+
+  Example 6:
+
+  Button Type Variations
+
+-->
+
+<a href="#!" class="btn" role="button">Normal</a>
+<a href="#!" class="btn--prime" role="button">Primary</a>
+<a href="#!" class="btn--emph" role="button">Emphasis</a>
+<a href="#!" class="btn--cancel" role="button">Cancel</a>
+
+<br /><br />
+
+<a href="#!" class="btn" disabled="disabled" role="button">Normal</a>
+<a href="#!" class="btn--prime" disabled="disabled" role="button">Primary</a>
+<a href="#!" class="btn--emph" disabled="disabled" role="button">Emphasis</a>
+<a href="#!" class="btn--cancel" disabled="disabled" role="button">Cancel</a>
+
+</body>
+</html>

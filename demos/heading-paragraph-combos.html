@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Headings with Paragraph Components</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="../css/master-project.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' />
+  </head>
+
+  <body style="padding: 40px;">
+<!--
+
+    Heading with Paragraph Combos
+
+    General Note:
+    Replace <h1> elements with the applicable semantic element and appropriate
+    font-size class on a case by case basis.
+
+    e.g. On a marketing page, there should be one <h1> for the over-all
+    message with <h2> used as headings for the sub messages of each additional
+    section to the page. Use <h3>s if there is a subtitle within the
+    subsections.
+
+    Again, use the semantically appropriate element first, and then use helper
+    font-sizing classes to adjust sizing to fit visual design.
+
+    Further more, the following is not semantically valid:
+    <h1>Heading</h1>
+    <h2>Sub heading</h2>
+
+    Heading elements require there to be an actual change in subject focus.
+    A subtitle or tag line is actually related to the first heading, so
+    the following is the appropriate solution:
+
+    <h1>Heading</h1>
+    <p class="FONT-SIZING-CLASS">Sub heading / tag line text</p>
+
+    Where "FONT-SIZING-CLASS" is used to mimic the heading styling to
+    visually draw additional attention to the text.
+
+-->
+
+
+<!--
+
+    Example 1:
+
+    Main CTA lockup with optional image
+
+-->
+
+<h1>
+  Title
+</h1>
+<p class="txt-h2">
+  Subtitle / tag line text goes here.
+</p>
+<p>
+  Paragraph
+</p>
+<a href="#!" class="btn-cta" role="button">
+  CTA Message
+</a>
+
+
+<!--
+
+    Example 2:
+
+    Sub CTA lockup with accompanying optional image
+-->
+
+<img src="#!" alt="img Desc" />
+<h1>
+  Title
+</h1>
+<p>
+  Paragraph
+</p>
+<a href="#!" class="btn-cta" role="button">
+  CTA Message
+</a>
+
+
+</body>
+</html>

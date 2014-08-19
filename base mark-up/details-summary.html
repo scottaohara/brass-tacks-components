@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Details &amp; Summary</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="../css/master-project.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' />
+  </head>
+
+  <body style="padding: 40px;">
+<!--
+
+    Details & Summary Elements
+
+
+    The <details> element is used to provide additional information about
+    a particular component.
+
+    It may contain a single <summary> element to provide brief information
+    about the expanded details within the element.
+
+    Using the attribute "open", the expanded information within the
+    <details> element can be visible by default.
+
+    This element is not yet supported in all browsers, but to easily mimic
+    it's functionality without requiring JS, please see example 3.
+
+    A <summary> element can only be a parent of a <details> element.
+
+    It is used to summarize the contents of a details element, or serve
+    as a caption or legend to the content.
+
+-->
+
+
+<!--
+
+    Example 1:
+
+    Details with opened summary by default
+
+-->
+
+  <details open="open">
+    <summary>
+      Summary of brief information (Opened)
+    </summary>
+    <div class="details-info">
+      <p>Additional information</p>
+      <ul>
+        <li>Point 1</li>
+        <li>Point 2</li>
+      </ul>
+    </div>
+  </details>
+
+
+
+<!--
+
+    Example 2:
+
+    Details with closed summary by default
+
+-->
+
+  <details>
+    <summary>
+      Summary of brief information (Not Opened)
+    </summary>
+    <div class="details-info">
+        <p>Additional information</p>
+        <ul>
+          <li>Point 1</li>
+          <li>Point 2</li>
+        </ul>
+    </div>
+  </details>
+
+
+<!--
+
+    Example 3:
+
+    Details with closed summary by default
+
+-->
+
+  <style>
+
+    .summary-mimic {
+      cursor: pointer;
+    }
+    .details-mimic {
+      display: none;
+    }
+    :checked + .details-mimic {
+      display: block;
+    }
+
+    summary::-webkit-details-marker {
+      display:none;
+    }
+
+  </style>
+
+  <details>
+    <summary>
+      <label for="details-ex" class="summary-mimic">
+        Summary of brief information (Not Opened)
+      </label>
+    </summary>
+    <input type="checkbox" class="invis" id="details-ex" />
+    <div class="details-info details-mimic">
+        <p>
+          This is not a
+        </p>
+    </div>
+  </details>
+
+
+<!--
+
+    Example 4:
+
+    Details with out a <summary>
+
+    Do not use a <details> element without also including a <summary> element.
+
+    If the <summary> element isn't included, a heading of "details" will be added
+    to the rendered page in place of the element.
+
+-->
+
+<details>
+  No summary element included... do not use this method.
+</details>
+
+</body>
+</html>
