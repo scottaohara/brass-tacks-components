@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Menu Button Demo</title>
@@ -16,19 +16,19 @@
 
     <script>
       (function() {
+        'use strict';
 
         // Method to change states which works in IE7+ / IE8+
-        var
-          btn = document.querySelector('.btn-menu'),
+        var btn = document.querySelector('.btn-menu'),
 
           // Toggle between on and off state
-          toggleState = function(elm, one, two) {
+          toggleState = function( elm, one, two ) {
             var elm = document.querySelector(elm);
             elm.setAttribute('data-state', elm.getAttribute('data-state') === one ? two : one);
           };
 
         // Target specific element to toggle
-        btn.onclick = function(e) {
+        btn.onclick = function( e ) {
           toggleState('.btn-menu', 'off', 'on');
           e.preventDefault();
         }
