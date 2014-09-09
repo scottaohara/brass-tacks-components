@@ -2298,12 +2298,12 @@ a.link-block__read-more {
   z-index: 0;
 }
 
-.btn-menu[data-state="on"] .btn-icon:after, .btn-menu[data-state="on"] .btn-icon:before {
+.btn--menu[data-state="on"] .btn--menu__icon:after, .btn--menu[data-state="on"] .btn--menu__icon:before {
   bottom: 0;
   top: 0;
 }
 
-.btn-menu {
+.btn--menu {
   background: white;
   border-radius: 4px;
   border: 1px solid black;
@@ -2312,14 +2312,14 @@ a.link-block__read-more {
   left: 8px;
   max-width: 300px;
   overflow: hidden;
-  padding: 0 8px 0 42px;
+  padding: 8px 8px 8px 42px;
   position: relative;
   text-transform: uppercase;
   top: 8px;
   transition: padding .2s .4s, text-indent .2s .4s, color .2s .4s, max-width .2s .4s;
   z-index: 11;
 }
-.btn-menu[data-state="on"] {
+.btn--menu[data-state="on"] {
   color: transparent;
   min-width: 1px;
   padding-left: 38px;
@@ -2327,20 +2327,20 @@ a.link-block__read-more {
   padding-right: 0;
   text-indent: -999px;
 }
-.btn-menu[data-state="on"] .btn-icon {
+.btn--menu[data-state="on"] .btn--menu__icon {
   background: transparent;
 }
-.btn-menu[data-state="on"] .btn-icon:before, .btn-menu[data-state="on"] .btn-icon:after {
+.btn--menu[data-state="on"] .btn--menu__icon:before, .btn--menu[data-state="on"] .btn--menu__icon:after {
   transition: all .2s .4s;
 }
-.btn-menu[data-state="on"] .btn-icon:after {
+.btn--menu[data-state="on"] .btn--menu__icon:after {
   transform: rotate(45deg);
 }
-.btn-menu[data-state="on"] .btn-icon:before {
+.btn--menu[data-state="on"] .btn--menu__icon:before {
   transform: rotate(-45deg);
 }
 
-.btn-icon {
+.btn--menu__icon {
   background: black;
   bottom: 0;
   height: 4px;
@@ -2352,7 +2352,7 @@ a.link-block__read-more {
   transition: .2s all;
   width: 30px;
 }
-.btn-icon:before, .btn-icon:after {
+.btn--menu__icon:before, .btn--menu__icon:after {
   background: #222222;
   border-radius: 4px;
   content: '';
@@ -2363,10 +2363,10 @@ a.link-block__read-more {
   transition: all .2s 0s;
   width: 100%;
 }
-.btn-icon:before {
+.btn--menu__icon:before {
   top: -8px;
 }
-.btn-icon:after {
+.btn--menu__icon:after {
   bottom: -8px;
 }
 
