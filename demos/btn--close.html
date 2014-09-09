@@ -2,32 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Site Search Component</title>
+    <title>Close Button</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link href="../css/master-project.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' />
+
+    <style>
+      .relative {
+        position: relative;
+      }
+    </style>
   </head>
 
   <body style="padding: 40px;">
 
-<!--
+    <div class="emph-block relative">
+      <button type='button' class="btn btn--close" aria-label="Close">
+        &times;
+      </button>
+      <h2>Stuff</h2>
+      <p>
+        And things...
+      </p>
+    </div>
 
-    Site Search Component
-
--->
-
-
-<form role="search" class="search--area w-50">
-
-  <input type="search" placeholder="Type your search..." id="search_input" class="input--text" />
-  <label for="search_area" class="label--reveal">
-    Enter Your Search
-  </label>
-  <button type="submit" class="btn btn--tiny btn--search">
-    Search
-  </button>
-</form>
-
-
-</body>
+  </body>
 </html>
