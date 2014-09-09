@@ -2,80 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Call outs</title>
+    <title>Text Decoration / Modifiers</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link href="../css/master-project.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' />
   </head>
 
   <body style="padding: 40px;">
-
-
-    <!--
-
-      .txt-callout
-
-      Use this class to add extra styling emphasis to a block of text.
-
-      Be sure to use the appropriate semantic element to properly contain
-      the contents. e.g. quotes should use <q> or <blockquote>.
-
-    -->
-
-    <blockquote class="txt-callout">
-      A Blockquote with a class of <code class="txt-tiny inline--element">.txt-callout</code>.
-    </blockquote>
-
-    <p class="txt-callout">
-      A Paragraph Element with a class of <code class="txt-tiny">.txt-callout</code>.
-    </p>
-
-
-    <!--
-
-      .txt-ALIGN
-
-      Simple text alignment helper classes.
-
-    -->
-
-    <p class="txt-left">
-      %txt-left, .txt-left
-    </p>
-
-    <p class="txt-center">
-      %txt-center, .txt-center
-    </p>
-
-    <p class="txt-right">
-      %txt-right, .txt-right
-    </p>
-
-
-
-    <!--
-
-      .txt-HIGHLIGHT
-
-      Emphasize / highlight text elements
-
-    -->
-
-    <p class="txt-highlight">
-      .txt-highlight
-    </p>
-
-    <p class="txt-slant">
-      .txt-slant
-    </p>
-
-    <p class="txt-highlight txt-slant">
-      <span class="txt-correct">
-        .txt-highlight.txt-slant > .txt-correct
-      </span>
-    </p>
-
-
 
     <!--
 
@@ -86,12 +19,24 @@
 
     -->
 
+    <p>
+      <b class="txt-normal">
+        .txt-normal (within a &lt;b>)
+      </b>
+    </p>
+
     <p class="txt-bold">
       .txt-bold
     </p>
 
     <p class="txt-italic">
       .txt-italic
+    </p>
+
+    <p>
+      <i class="txt-no-italic">
+        .txt-no-italic (within a &lt;i>)
+      </i>
     </p>
 
     <p class="txt-success">
@@ -110,7 +55,31 @@
       .txt-bold.txt-italic.txt-error
     </p>
 
+    <hr />
 
+    <!--
+
+      .txt-HIGHLIGHT
+
+      Emphasize / highlight text elements
+
+    -->
+
+    <p class="txt-highlight">
+      .txt-highlight
+    </p>
+
+    <p class="txt-slant">
+      .txt-slant
+    </p>
+
+    <p class="txt-highlight txt-slant">
+      <span class="txt-slant__correct">
+        .txt-highlight.txt-slant > .txt-slant__correct
+      </span>
+    </p>
+
+    <hr />
 
     <!--
 
@@ -138,7 +107,31 @@
       corrupti quos dolores et quas molestias
     </p>
 
+    <hr />
 
+
+    <!--
+
+      .txt-ALIGN
+
+      Simple text alignment helper classes.
+
+    -->
+
+    <p class="txt-left">
+      %txt-left, .txt-left
+    </p>
+
+    <p class="txt-center">
+      %txt-center, .txt-center
+    </p>
+
+    <p class="txt-right">
+      %txt-right, .txt-right
+    </p>
+
+
+    <hr />
 
     <!--
 
@@ -148,22 +141,30 @@
       with heading-like font sizes.
 
     -->
+    <p>
+      Paragraph Normal  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+      corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+    </p>
 
     <p class="line-tight">
-      With <code class="css txt-tiny">.line-tight</code> - At vero eos et accusamus et iusto
-      odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+      Paragraph With <code class="txt-tiny">.line-tight</code> - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+      corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+    </p>
+
+    <p class="line-tighter">
+      Paragraph With <code class="txt-tiny">.line-tighter</code> - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
       corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
     </p>
 
     <h1 class="line-tight">
-      With <code class="css txt-tiny inline--element">h1.line-tight</code> - At vero eos et accusamus et iusto
+      With <code class="txt-mini display-inline">h1.line-tight</code> - At vero eos et accusamus et iusto
     </h1>
 
     <h1 class="line-tighter">
-      With <code class="css txt-tiny inline--element">h1.line-tighter</code> - At vero eos et accusamus et iusto odio dignissimos
+      With <code class="txt-mini display-inline">h1.line-tighter</code> - At vero eos et accusamus et iusto odio dignissimos
     </h1>
 
-
+    <hr />
 
     <!--
 
@@ -180,7 +181,8 @@
     -->
 
     <p class="txt-antialiased">
-      .txt-antialiased<br />
+      <code class="display-inline">.txt-antialiased</code>
+      <br />
       Currently only works on webkit browsers on Apple devices.
     </p>
 
