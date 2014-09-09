@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Floats</title>
+    <title>Floats | Brass Tacks</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link href="../css/master-project.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' />
@@ -45,13 +45,33 @@
 
 -->
 
-
-<div class="container">
-  <div class="float-direction">
-    Floating Content
+<p>No clearfix</p>
+<div class="container emph-block ">
+  <div class="float-left">
+    Floating left content
   </div>
-  <div class="content">
+  <br />
+  <div class="float-none">
     Non-floating content
+  </div>
+  <br />
+  <div class="float-right">
+    Floating right content
+  </div>
+</div>
+
+<p>With clearfix</p>
+<div class="container emph-block clearfix">
+  <div class="float-left">
+    Floating left content
+  </div>
+  <br />
+  <div class="float-none">
+    Non-floating content
+  </div>
+  <br />
+  <div class="float-right">
+    Floating right content
   </div>
 </div>
 

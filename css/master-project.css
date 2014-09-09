@@ -1000,7 +1000,7 @@ q.emph-block:before, q.emph-block:after {
   content: '';
 }
 
-.input-text, .crs, .select-container, .input-select-multi, .input--file__area {
+.input-text, .crs, .select-container, .input-multi-select, .input--file__area {
   background-color: white;
   border: 1px solid #cccccc;
   font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -1010,7 +1010,7 @@ q.emph-block:before, q.emph-block:after {
   width: 100%;
   -webkit-appearance: none;
 }
-.input-text:focus, .crs:focus, .select-container:focus, .input-select-multi:focus, .input--file__area:focus {
+.input-text:focus, .crs:focus, .select-container:focus, .input-multi-select:focus, .input--file__area:focus {
   background-color: #fdfdfd;
   box-shadow: 0 0 6px rgba(0, 200, 222, 0.25);
 }
@@ -1194,6 +1194,7 @@ input:focus + .cr-pill__option {
 }
 
 .select-container {
+  overflow: hidden \9;
   position: relative;
 }
 .select-container:after {
@@ -1216,11 +1217,20 @@ input:focus + .cr-pill__option {
   font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  width: 115% \9;
   z-index: 2;
 }
+.input-select::-ms-expand {
+  display: none;
+}
 
-.input-select-multi option {
-  padding: 4px 2px;
+.input-multi-select option {
+  padding: 4px;
+}
+
+.input-multi-select--resize {
+  min-height: 75px;
+  resize: vertical;
 }
 
 .input--color {
@@ -1878,6 +1888,10 @@ i, em, dfn, blockquote, img,
 
 .txt-no-underline {
   text-decoration: none;
+}
+
+.txt-upper {
+  text-transform: uppercase;
 }
 
 .txt-indent-number {
