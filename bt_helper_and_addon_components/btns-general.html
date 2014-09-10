@@ -15,13 +15,33 @@
     Buttons: General
 
 
-    The styling and markup of these elements is currently
-    subject to change. Use these as merely a reference
-    of where the app may be going at this point...
+    There are various different button colors, sizing,
+    and additional styling classes available to customize
+    Brass Tacks buttons.
 
-    Also contained are the current styling of the CTA
-    button for marketing pages. This only exists in two
-    sizes as of building this demo.
+    All buttons require the base class of .btn which has a generic
+    default coloring state, so it may be used on it's own.
+
+    Additional button class states include:
+    prime
+    cta
+    emph
+    neg
+    disabled
+
+    fill
+
+    tiny
+    small
+    large
+    xlarge
+
+    fat
+    thin
+    wide
+
+    soft
+    rounded
 
 -->
 
@@ -52,9 +72,9 @@
 <br />
 
 <!-- We likely will only use the 'submit' and maybe 'reset' versions here >-->
-<input type="button" class="btn" value="Button Label" />
-<input type="submit" class="btn" value="Submit" />
-<input type="reset" class="btn" value="Reset" />
+<input type="button" class="btn" value="Input Type = Button" />
+<input type="submit" class="btn" value="Input Type = Submit" />
+<input type="reset" class="btn" value="Input Type = Reset" />
 
 <br />
 <br />
@@ -68,8 +88,8 @@
 
 -->
 
-<a href="#!" class="btn btn--cta">
-  This is a Link
+<a href="#!" class="btn btn--cta btn--fill">
+  This is a Link w/btn--fill
 </a>
 
 <button type="button" class="btn btn--cta">
@@ -81,27 +101,55 @@
 <br />
 <br />
 
-<a href="#!" class="btn btn--cta btn--cta--alt">
+<a href="#!" class="btn btn--prime">
   This is a Link
 </a>
 
-<button type="button" class="btn btn--cta btn--cta--alt">
-  This is a Button
+<button type="button" class="btn btn--prime btn--fill">
+  This is a Button w/btn--fill
 </button>
 
-<input type="submit" value="This is a Submit Input" class="btn btn--cta btn--cta--alt" />
+<input type="submit" value="This is a Submit Input" class="btn btn--prime" />
 
 <br />
 <br />
 
-<button type="button" class="btn btn--cta btn--cta--thin">
-  This is a Button (thin)
+<button type="button" class="btn btn--tiny btn--thin">
+  Tiny Button (thin)
 </button>
 
-<button type="button" class="btn btn--cta btn--cta--fat">
+<button type="button" class="btn btn--small btn--thin">
+  Small Button (thin)
+</button>
+
+<button type="button" class="btn btn--thin">
+  Button (thin)
+</button>
+
+<button type="button" class="btn btn--large btn--thin">
+  Large Button (thin)
+</button>
+
+
+<br />
+<br />
+
+
+<button type="button" class="btn btn--tiny btn--fat">
+  Tiny &amp; Fat
+</button>
+
+<button type="button" class="btn btn--small btn--fat">
+  Small &amp; Fat
+</button>
+
+<button type="button" class="btn btn--cta btn--fat">
   This is a Button (fat)
 </button>
 
+<button type="button" class="btn btn--large btn--fat">
+  Large &amp; Fat
+</button>
 
 <br />
 <br />

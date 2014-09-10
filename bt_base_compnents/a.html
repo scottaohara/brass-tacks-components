@@ -95,7 +95,7 @@
 <br />
 <br />
 
-<a tabindex="0" role="link">Placeholder with tabindex="0" and aria role="link"</a>
+<a tabindex="0">Placeholder with tabindex="0"</a>
 
 <br />
 <br />
@@ -116,14 +116,14 @@
     user may be seeing / partially seeing or having dictated to them and the
     actual behavior that must be performed to interact with the element.
 
+    Just adding the ARIA button role isn't enough though, there must be
+    accompanying JavaScript to actually alter the anchor to allow for the
+    same keyboard interactions that an actual button has.
+
 -->
 
-<a>Anchor Element Styled as a Button</a>
 
-<br />
-<br />
-
-<a href="#!!" role="button" class="btn">A link that looks like a button</a>
+<a href="#!" role="button" class="btn">Anchor Element Styled as a Button</a>
 
 
 </body>
