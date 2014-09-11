@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accessible Modal Window | Brass Tacks</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="../css/master-project.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' />
+  </head>
+
+  <body id="body">
+
+    <!--
+
+      mark-up for normal content
+
+    -->
+
+    <div class="page" id="page">
+
+      <main role="main" class="content-base">
+
+        <div class="content menu">
+          <button class="btn" type="button" id="modal_open">Open the Modal</button>
+        </div>
+
+        <article class="content">
+          <h1>Accessible Modal Window</h1>
+          <p>
+            These inputs are here to show that you can't tab out of the modal
+            window, while it is open.
+          </p>
+          <form action="#">
+            <label for="test" class="label">
+              Label for Input
+            </label>
+            <input type="text" id="test" class="input-text" placeholder="Placeholder 1..." />
+
+            <label for="test2" class="label">
+              Label for Second Input
+            </label>
+            <input type="text" id="test2" class="input-text" placeholder="Placeholder 2..." />
+
+          </form>
+
+        </article> <!-- end .content-area -->
+      </main>
+    </div>  <!-- end #page -->
+
+
+    <!--
+
+      mark-up for modal window
+
+    -->
+
+    <div class="modal-overlay" id="modal_window"
+         aria-hidden="true" role="dialog"
+         aria-labelledby="modal_title">
+
+      <div class="modal-overlay__content" id="modal_holder" role="document">
+
+        <h1 class="modal-overlay__content__title" id="modal_title">Modal Title</h1>
+
+
+        <p>
+          The modal window can easily be styled by adding additional classes to
+          the #modal_holder, or by extending the .modal-overlay__content ruleset.
+        </p>
+
+        <p>
+          Add some example classes:
+        </p>
+        <button type="button" class="btn btn--small" id='add_class1'>
+          Add .emph-block
+        </button>
+
+        <button type="button" class="btn btn--small" id='add_class2'>
+          Add .emph-block--callout
+        </button>
+
+        <button type="button" class="btn btn--close" id="modal_close" aria-label="close">
+          &times;
+        </button>
+
+      </div> <!-- end .modal-content -->
+
+    </div> <!-- end .modal-overlay -->
+
+    <script src="../js/modal--overlay.js"></script>
+
+    <script>
+      var ac1 = document.getElementById('add_class1'),
+          ac2 = document.getElementById('add_class2'),
+          moc = document.getElementById('modal_holder');
+
+      ac1.addEventListener('click', function() {
+        // add a class of emph-block on click
+        moc.classList.add('emph-block');
+      });
+
+      ac2.addEventListener('click', function() {
+        // add a class of emph-block on click
+        moc.classList.add('emph-block--callout');
+      });
+    </script>
+
+  </body>
+</html>
