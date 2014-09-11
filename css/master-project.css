@@ -560,14 +560,13 @@ progress:not([value])::-webkit-progress-bar {
   padding: 16px;
 }
 
+q.emph-block:before, q.emph-transparent:before, q.emph-block:after, q.emph-transparent:after {
+  display: none;
+}
+
 .emph-block {
   background: #fdfdfd;
   border-radius: 4px;
-  display: block;
-}
-
-q.emph-block:before, q.emph-block:after {
-  display: none;
 }
 
 .emph-block--callout {
