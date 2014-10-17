@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Credit Card Entry Component | Brass Tacks</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="../css/master-project.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' />
+  </head>
+
+  <body style="padding: 40px;">
+
+    <form action="" method="post" class="emph-block">
+
+      <h2 class="txt-h3">Credit Card Entry</h2>
+
+      <div class="form-row">
+        <label for="cc_name" class="is-required">
+          Name on Credit Card:
+        </label>
+        <input type="text" id="cc_name" name="cc_name"
+               placeholder="ex: John Smight"
+               required
+               class="input-text" />
+      </div>
+
+      <div class="row form-row">
+        <div class="col w-50">
+          <div class="form-row">
+            <label for="cc_num" class="is-required">
+              Credit Card Number:
+            </label>
+            <input type="text" id="cc_num" name="cc_num"
+                   placeholder="1111 2222 3333 4444"
+                   maxlength="16" pattern="[0-9]*" required
+                   class="input-text" />
+          </div> <!-- end .form-row -->
+        </div> <!-- end .w-50 -->
+        <div class="col w-50">
+          <div class="form-row">
+            <label for="cc_security" class="is-required">
+              Security Code:
+            </label>
+            <input type="text" id="cc_security" name="cc_security"
+                 placeholder="###"
+                 maxlength="4" pattern="[0-9}*" required
+                 class="input-text" />
+          </div> <!-- end .form-row -->
+        </div> <!-- end w-50 -->
+      </div> <!-- end .row -->
+
+      <div class="row">
+        <div class="col w-50">
+          <div class="form-row">
+            <label for="exp-date-mm" class="is-required">
+              Expiration Date
+            </label>
+            <div class="select-container">
+              <select class="input-select" id="exp-date-mm" required>
+                <option disabled selected>MM</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div> <!-- end .select-container -->
+          </div> <!-- end .form-row -->
+        </div> <!-- end .w-50 -->
+        <div class="col w-50">
+          <label for="exp-date-mm" class="is-required">
+            Expiration Date
+          </label>
+          <div class="form-row">
+            <div class="select-container">
+              <select class="input-select" id="exp-date-mm" required>
+                <option disabled selected>MM</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div> <!-- end .select-container -->
+          </div> <!-- end .form-row -->
+        </div> <!-- end .w-50 -->
+      </div> <!-- end .row -->
+
+      <button type="submit" class="btn btn--prime">Submit CC Info</button>
+      <button type="reset" class="btn">Reset</button>
+    </form>
+
+  </body>
+</html>
