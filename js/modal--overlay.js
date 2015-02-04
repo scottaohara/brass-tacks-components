@@ -11,7 +11,7 @@ swap();
 
 
 // modal window
-(function() {
+;(function() {
 
   'use strict';
 
