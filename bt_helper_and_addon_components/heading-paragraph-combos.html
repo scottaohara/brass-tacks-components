@@ -31,10 +31,17 @@
 
     Heading elements require there to be an actual change in subject focus.
     A subtitle or tag line is actually related to the first heading, so
-    the following is the appropriate solution:
+    one of the following is the appropriate solution:
 
     <h1>Heading</h1>
     <p class="FONT-SIZING-CLASS">Sub heading / tag line text</p>
+
+    or
+
+    <h1>
+      Heading
+      <span class="FONT-SIZING-CLASS">Sub heading / tag line text</span>
+    </h1>
 
     Where "FONT-SIZING-CLASS" is used to mimic the heading styling to
     visually draw additional attention to the text.
@@ -50,41 +57,41 @@
 
 -->
 
-<h1>
-  Title
-</h1>
-<p class="txt-h2">
-  Subtitle / tag line text goes here.
-</p>
-<p>
-  Paragraph
-</p>
-<a href="#!" class="btn btn--prime">
-  "button" message
-</a>
+    <h1>
+      Title
+      <span class="txt-mini display-block">
+        Subtitle / tag line text goes here.
+      </span>
+    </h1>
+    <p>
+      Paragraph
+    </p>
+    <a href="#!" class="btn btn--prime">
+      CTA
+    </a>
 
 
-<hr />
+    <hr />
 
 
-<!--
+    <!--
 
-    Example 2:
+        Example 2:
 
-    Sub CTA lockup with accompanying optional image
--->
+        Sub CTA lockup with accompanying optional image
+    -->
 
-<img src="http://placekitten.com/g/200/300" alt="img Desc" />
-<h1>
-  Title
-</h1>
-<p>
-  Paragraph
-</p>
-<a href="#!" class="btn btn--prime">
-  "button" message
-</a>
+    <img src="http://placekitten.com/g/200/300" alt="img Desc" />
+    <h1>
+      Title
+    </h1>
+    <p>
+      Paragraph
+    </p>
+    <a href="#!" class="btn btn--prime">
+      CTA
+    </a>
 
 
-</body>
+  </body>
 </html>
