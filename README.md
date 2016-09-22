@@ -1,6 +1,9 @@
-Brass Tacks Demos
+Brass Tacks Component Demos
 =================
 
-Demos for the Brass Tacks Framework
+This repo is no longer active.  
 
-To keep the main Brass Tacks repository clean of all but the necessary gulp & Sass files, demos have been moved here.
+You can find more up to date versions of some of the components that were listed here in the following locations:  
+
+* [Brass Tacks](https://github.com/scottaohara/Brass-Tacks)  
+* [Accessible Components](https://github.com/scottaohara/accessible-components)  
